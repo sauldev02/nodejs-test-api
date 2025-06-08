@@ -1,11 +1,10 @@
 import express from 'express';
-import { PrismaClient } from './generated/prisma';
+import prisma from '@infra/database/prisma/client';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
 const app = express();
-const prisma = new PrismaClient();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());

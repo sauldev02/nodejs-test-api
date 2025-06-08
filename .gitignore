@@ -1,4 +1,12 @@
+# Dependency directories
 node_modules
+
+# Generated files by Prisma
+/src/generated
+
+# Build output
+dist
+
 # Keep environment variables out of version control
 .env
 
