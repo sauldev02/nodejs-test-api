@@ -29,18 +29,18 @@
     "module": "commonjs",                                /* Specify what module code is generated. */
     "rootDir": "./src",
     // "moduleResolution": "node10",                     /* Specify how TypeScript looks up a file from a given module specifier. */
-    "baseUrl": "./src",                                  /* Specify the base directory to resolve non-relative module names. */
+    "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
     "paths": {
-      "@app/*": ["application/*"],
-      "@domain/*": ["domain/*"],
+      "@app/*": ["src/application/*"],
+      "@domain/*": ["src/domain/*"],
       "@generated/*": ["generated/*"],
-      "@infra/*": ["infrastructure/*"],
-      "@controllers/*": ["presentation/controllers/*"],
-      "@routes/*": ["presentation/routes/*"],
-      "@services/*": ["presentation/services/*"],
-      "@utils/*": ["presentation/utils/*"],
-      "@middlewares/*": ["presentation/middlewares/*"],
-      "@validations/*": ["presentation/validations/*"],
+      "@infra/*": ["src/infrastructure/*"],
+      "@controllers/*": ["src/presentation/controllers/*"],
+      "@routes/*": ["src/presentation/routes/*"],
+      "@services/*": ["src/presentation/services/*"],
+      "@utils/*": ["src/presentation/utils/*"],
+      "@middlewares/*": ["src/presentation/middlewares/*"],
+      "@validations/*": ["src/presentation/validations/*"],
     },
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
