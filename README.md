@@ -36,14 +36,23 @@ Este proyecto está en fase de desarrollo. Es parte de un ejercicio práctico pa
 
 ```bash
 nodejs-test-api/
+├── .git/
+├── .vscode/
+├── dist/
+├── generated/
+├── node_modules/
+├── prisma/
+│   ├── migrations/
+│   └── schema.prisma
 ├── src/
 │   ├── application/
+│   ├── config/
 │   ├── domain/
 │   ├── infrastructure/
-│   └── presentation/
-├── prisma/
-│   └── schema.prisma
-├── .env
+│   ├── presentation/
+│   └── server.ts
 ├── .gitignore
+├── package-lock.json
 ├── package.json
-└── README.md
+├── README.md
+└── tsconfig.json
