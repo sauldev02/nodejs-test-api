@@ -33,13 +33,13 @@ export function apiErrorResponse({ res, error }: ErrorResponseParams) {
   const statusCode = error instanceof ApiError ? error.statusCode : HTTP_STATUS.INTERNAL_SERVER_ERROR;
 
   const errorResponse = error instanceof ApiError ? error : {
-		message: "Internal Server Error",
-		error: {
-			code: "INTERNAL_SERVER_ERROR",
-			details: "Something went wrong",
-			payload: undefined,
-		},
-	};
+          message: "Internal Server Error",
+          error: {
+            code: "INTERNAL_SERVER_ERROR",
+            details: "Something went wrong",
+            payload: undefined,
+          },
+        };
 
   const response = {
     success: false,
