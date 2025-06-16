@@ -28,24 +28,24 @@ export function apiSuccessResponse({
 }
 
 export function apiErrorResponse({ res, error }: ErrorResponseParams) {
-	console.error(error);
+  console.error(error);
 
   const statusCode = error instanceof ApiError ? error.statusCode : HTTP_STATUS.INTERNAL_SERVER_ERROR;
 
-	const errorResponse = error instanceof ApiError ? error : { 
-		message: "Internal Server Error", 
+  const errorResponse = error instanceof ApiError ? error : {
+		message: "Internal Server Error",
 		error: {
 			code: "INTERNAL_SERVER_ERROR",
-			details: "Something went wrong", 
-			payload: undefined
-		}
+			details: "Something went wrong",
+			payload: undefined,
+		},
 	};
 
-	const response = {
-		success: false,
-		message: errorResponse.message,
-		error: errorResponse.error,
-	};
+  const response = {
+    success: false,
+    message: errorResponse.message,
+    error: errorResponse.error,
+  };
 
   return res.status(statusCode).json(response);
 }
