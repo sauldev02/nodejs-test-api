@@ -13,5 +13,6 @@ export function registerModuleAliases() {
     "@utils": path.join(__dirname, "..", "presentation/utils"),
     "@middlewares": path.join(__dirname, "..", "presentation/middlewares"),
     "@validations": path.join(__dirname, "..", "presentation/validations"),
+    "@shared": path.join(__dirname, "..", "shared"),
   });
 }

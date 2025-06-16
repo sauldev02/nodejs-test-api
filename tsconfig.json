@@ -41,6 +41,7 @@
       "@utils/*": ["src/presentation/utils/*"],
       "@middlewares/*": ["src/presentation/middlewares/*"],
       "@validations/*": ["src/presentation/validations/*"],
+      "@shared/*": ["src/shared/*"],
     },
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
